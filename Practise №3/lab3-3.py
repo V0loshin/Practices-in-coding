@@ -42,5 +42,5 @@ to define multi-line strings
 
 # Получите первую половину строки, хранящейся в переменной phrase.
 # Примечание: не забудьте о преобразовании типов.
-first = phrase[0:int(len(phrase)/2)]
-print(first)
+first_half = phrase[0:int(len(phrase)/2+1)]
+print(first_half)
