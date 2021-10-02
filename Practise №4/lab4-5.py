@@ -19,5 +19,6 @@ for i in range(0,5):
 
 print("Список призывников: \n")    
 
+print("        Фамилия|"+"            Имя|"+"        Отчество|"+"  Год рождения|"+"    Заболевание\n")
 for i in range(0,5):
-    print("Призывник", i+1, ": ", surname[i], name[i], patronymic[i], birth_year[i], illness[i])
+    print("%15s|%15s|%16s|%14s|%15s" % (surname[i], name[i], patronymic[i], birth_year[i], illness[i]))
