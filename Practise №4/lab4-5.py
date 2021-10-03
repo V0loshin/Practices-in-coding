@@ -15,8 +15,8 @@ for i in range(0,5):
     patronymic[i] = input("Отчество: ");
     birth_year[i] = input("Год рождения: ");
     illness[i] = input("Заболевание: ");
-    os.system('cls||clear') 
-
+     
+os.system('cls||clear')
 print("Список призывников: \n")    
 
 print("        Фамилия|"+"            Имя|"+"        Отчество|"+"  Год рождения|"+"    Заболевание\n")
