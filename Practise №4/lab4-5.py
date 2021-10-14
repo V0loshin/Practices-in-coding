@@ -6,17 +6,17 @@ patronymic = {}
 birth_year = {}
 illness = {}
 
-for i in range(0,5):
-    os.system('cls||clear')
+for i in range(0,5):                                   # Завел цикл для того, чтобы консоль очищалась после введения данных об
+    os.system('cls||clear')                            # очередном призывнике
     print("Введите данные о призывниках:\n")
     print("Призывник №", i+1, ":", sep="")
-    surname[i] = input("Фамилия: ");
-    name[i] = input("Имя: ");
+    surname[i] = input("Фамилия: ");                   # Последовательно записываю данные i-того призывника в отдельно выделенные
+    name[i] = input("Имя: ");                          # словари
     patronymic[i] = input("Отчество: ");
     birth_year[i] = input("Год рождения: ");
     illness[i] = input("Заболевание: ");
      
-os.system('cls||clear')
+os.system('cls||clear')                                # Очищаю экран для того чтобы вывести таблицу призывников 
 print("Список призывников: \n")    
 
 print("        Фамилия|"+"            Имя|"+"        Отчество|"+"  Год рождения|"+"    Заболевание\n")
