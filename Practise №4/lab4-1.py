@@ -11,7 +11,7 @@ print(squares)
 
 # Выведите на экран подсписок [4, 9, 16]. 
 
-print(squares[1:4])                   
+print(squares[1::-1])                   
  
 
 """ 

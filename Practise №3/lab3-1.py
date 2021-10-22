@@ -2,9 +2,13 @@
 
 # Python поддерживает умножение строк на числа.
 
-hello = "Hello "
+a = 12
 
-world = 'World'
+hello = r"Hello "
+
+world = f'World {a**2}'
+
+print(world)
 
 # Получите строку "Hello World" с помощью конкатенации предыдущих переменных
 
