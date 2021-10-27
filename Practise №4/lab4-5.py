@@ -1,31 +1,35 @@
 import os
 
-conscripts = {} 
+conscripts = {}     # Создал пустой словарь для записи призывников
 
 os.system('cls||clear')
-number_of_conscr = int(input("Введите количество призывников: "))
+number_of_conscr = int(input("Введите количество призывников: "))    # Узнаю у пользователя количество призывников
 
-for i in range(0,number_of_conscr):
-    print(f"Данные о призывнике №{i+1}:\n")
-    conscripts[f"surname{i+1}"] = input("Фамилия: ")
-    conscripts[f"name{i+1}"] = input("Имя: ")
-    conscripts[f"patr{i+1}"] = input("Отчество: ")
-    conscripts[f"b_year{i+1}"] = input("Год рождения: ")
-    conscripts[f"ill{i+1}"] = input("Заболевание: ")
-    os.system('cls||clear')
+# Завожу цикл для ввода данных о призывниках
+
+for i in range(0,number_of_conscr):                   
+    print(f"Данные о призывнике №{i+1}:\n")                          # Создаю ключи surname, name, patr, b_year и ill для каждого призывника
+    conscripts[f"surname{i+1}"] = input("Фамилия: ")                 # с его порядковым номером при записи, находящимся на конце каждого  
+    conscripts[f"name{i+1}"] = input("Имя: ")                        # ключа и присваиваю этим ключам соответственные значения с помощью 
+    conscripts[f"patronymic{i+1}"] = input("Отчество: ")             # ввода данных с клавиатуры. 
+    conscripts[f"b_year{i+1}"] = input("Год рождения: ")             # Таким образом, например, у первого призывника данные будут записаны 
+    conscripts[f"ill{i+1}"] = input("Заболевание: ")                 # в словарь под ключами surmame[1], name[1], patronymic[1] и т.д.
+    os.system('cls||clear')     # Очищаю консоль для ввода данных о следующем призывнике 
+
+# Вывожу записанные данные о всех призывниках в виде таблицы:
 
 print("Список призывников: \n")    
 
-print("         Фамилия        |", end="")
-print("          Имя          |", end="")
+print("         Фамилия        |", end="")                   # Я сделал вывод одной строки в 5 принтов, а не в один, так как один принт         
+print("          Имя          |", end="")                    # был бы слишком длинным
 print("         Отчество          |", end="")
 print("  Год рождения  |", end="")
 print("             Заболевание\n")
 
 for i in range(0,number_of_conscr):
-    print("%24s" % conscripts[f"surname{i+1}"], end="")
-    print("%24s" % conscripts[f"name{i+1}"], end="")
-    print("%28s" % conscripts[f"patr{i+1}"], end="")
-    print("%17s" % conscripts[f"b_year{i+1}"], end="")
+    print("%24s" % conscripts[f"surname{i+1}"], end="")      # Цикл на каждой итерации выводит строку в которой выделено пять областей 
+    print("%24s" % conscripts[f"name{i+1}"], end="")         # для записи в эти области последовательно фамилии, имени, отчества, года р-я  
+    print("%28s" % conscripts[f"patronymic{i+1}"], end="")   # и заболевания соответсвующего i-ого призывника (так как цикл начинается с 0,
+    print("%17s" % conscripts[f"b_year{i+1}"], end="")       # то i+1-ого призывника.
     print("%34s\n" % conscripts[f"ill{i+1}"], end="")
     
