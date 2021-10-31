@@ -30,6 +30,6 @@ for i in range(0,number_of_conscr):
     print("%24s" % conscripts[f"surname{i+1}"], end="")      # Цикл на каждой итерации выводит строку в которой выделено пять областей 
     print("%24s" % conscripts[f"name{i+1}"], end="")         # для записи в эти области последовательно фамилии, имени, отчества, года р-я  
     print("%28s" % conscripts[f"patronymic{i+1}"], end="")   # и заболевания соответсвующего i-ого призывника (так как цикл начинается с 0,
-    print("%17s" % conscripts[f"b_year{i+1}"], end="")       # то i+1-ого призывника.
+    print("%17s" % conscripts[f"b_year{i+1}"], end="")       # то i+1-ого призывника).
     print("%34s\n" % conscripts[f"ill{i+1}"], end="")
     
