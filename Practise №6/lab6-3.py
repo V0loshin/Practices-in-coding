@@ -5,8 +5,6 @@ calc = calculator.Calculator()    # создаём новый экземпляр
 calc.add(2)                       # увеличиваем значение calc на 2, используя функцию из класса Calculator
 print(calc.get_current())         # выводим текущее значение calc на экран, используя функцию из того же класса
 
-
-
 import my_module      # Импортировали модуль my_module 
 
 my_module.hello_world("Илья")      # Вызовали функцию hello_world из модуля my_module

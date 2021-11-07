@@ -57,5 +57,5 @@ print()
 
 for x in range(10): 
     if x%2 == 0:    # Проверяем х на четность 
-        continue   	# пропускаем print(x)  
+        continue   	# пропускаем print(x) когда x - четное число 
     print(x) 

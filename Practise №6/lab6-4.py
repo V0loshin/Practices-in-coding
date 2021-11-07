@@ -1,6 +1,6 @@
 # Предварительно создал в папке с проектом файлы input.txt и input1.txt 
 
-f = open("input.txt", "r")   # открываем файл "input.txt"
+f = open("input.txt", "r")   # открываем файл "input.txt" для чтения
 
 # Вывожу содержимое «input.txt» и первую строку «input1.txt». Затем закрываю файлы. 
 for line in f.readlines():   # чтение построчно 
@@ -25,7 +25,7 @@ zoo = ['lion', "elephant", 'monkey']
 if __name__ == "__main__": 
     f = open("output.txt", "a")  # добавил нужный аргумент 
 
-    for i in zoo: 
-        f.write(i)  # добавил все элементы в файл 
+    for animal in zoo: 
+        f.write(animal)  # добавил все элементы в файл 
 
     f.close() # закрываю файл 
