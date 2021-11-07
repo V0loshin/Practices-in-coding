@@ -1,3 +1,2 @@
-string
-string
-string
+323 424
+"output.txt"

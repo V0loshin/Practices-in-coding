@@ -23,7 +23,7 @@ zoo = ['lion', "elephant", 'monkey']
 # Добавляю элементы списка zoo в файл "output.txt" :  
 
 if __name__ == "__main__": 
-    f = open("output.txt", "a")  # добавил нужный аргумент 
+    f = open("output.txt", "w")  # добавил нужный аргумент 
 
     for animal in zoo: 
         f.write(animal)  # добавил все элементы в файл 
