@@ -26,6 +26,6 @@ if __name__ == "__main__":
     f = open("output.txt", "w")  # добавил нужный аргумент 
 
     for animal in zoo: 
-        f.write(animal)  # добавил все элементы в файл 
+        f.write(animal + '\n')  # добавил все элементы в файл
 
     f.close() # закрываю файл 
