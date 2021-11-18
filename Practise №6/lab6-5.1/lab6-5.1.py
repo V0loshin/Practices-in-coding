@@ -1,7 +1,7 @@
 from print_figure import PrintRectangle
 from print_figure import PrintSquare
 
-fin = open("C:/Users/ilyav/Desktop/Coding practise/Practise №6/lab6-5.1/input.txt", "r")
+fin = open("C:\All\Coding practise\Practise №6\lab6-5.1\input.txt", "r")
 
 line1 = []
 
