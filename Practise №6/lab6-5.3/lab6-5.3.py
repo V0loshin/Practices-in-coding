@@ -30,17 +30,3 @@ else:
         fout.write("Файл с входными данными не обнаружен.")       
 
 fout.close()
- 
-    
-        
-
-"""
-fout = open("output.txt", "w")  
-
-fout.write(f"Число: {number}\n")
-fout.write(f"Количество цифр: {count_digits(number)}\n")
-fout.write(f"Сумма цифр: {sum_of_digits(number)}\n")
-fout.write(f"Произведение цифр: {multiplication_of_digits(number)}\n")
-
-fout.close()
-"""
