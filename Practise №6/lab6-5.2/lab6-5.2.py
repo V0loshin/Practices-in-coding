@@ -1,57 +1,32 @@
 import os
-print(os.listdir())
-
-def count_digits(x):
-    count = 0
-    while x > 0:
-        x = x // 10
-        count += 1
-    return count  
-
-def sum_of_digits(x):
-    sum = 0
-    while x > 0:
-        y = x % 10
-        x = x // 10
-        sum += y
-    return sum   
-
-def multiplication_of_digits(x):
-    mult = 1
-    while x > 0:
-        y = x % 10
-        x = x // 10
-        mult *= y
-    return mult           
+from module_6_5_2 import * 
 
 current_dir = "C:\All\Coding practise\Practise №6\lab6-5.2"
 file_name = ""
 number = 0
 
-if len(os.listdir(current_dir)) > 0:
-    for files in os.listdir(current_dir):
-        if files == "input.txt": 
-            file_name = files
-            break
+for files in os.listdir(current_dir):
+    if files == "input.txt": 
+        file_name = files
+        break
 
 if file_name == "":
     print("Файл input.txt не найден в текущей директории!")
 else:
-    f = open("C:\All\Coding practise\Practise №6\lab6-5.2\input.txt", "r")
+    fin = open("C:\All\Coding practise\Practise №6\lab6-5.2\input.txt", "r")
     
     line = []
-    line = f.readline().split()
+    line = fin.readline().split()
     number = int(line[0])
 
-    f.close()
+    fin.close()
 
-print(number)
-print(count_digits(number))
-print(sum_of_digits(number))
-print(multiplication_of_digits(number))
+if number != 0:
+    fout = open("output.txt", "w")  
 
-"""
-for filenames in os.walk("."):
-        for filename in filenames:
-            print(filename)
-"""            
+    fout.write(f"Число: {number}\n")
+    fout.write(f"Количество цифр: {count_digits(number)}\n")
+    fout.write(f"Сумма цифр: {sum_of_digits(number)}\n")
+    fout.write(f"Произведение цифр: {multiplication_of_digits(number)}\n")
+
+    fout.close()
