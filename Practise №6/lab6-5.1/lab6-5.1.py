@@ -1,19 +1,21 @@
-from print_figure import PrintRectangle
-from print_figure import PrintSquare
+from print_figure import print_rectangle
+from print_figure import print_square
 
-fin = open("C:\All\Coding practise\Practise №6\lab6-5.1\input.txt", "r")
+f_in = open("C:/All/Coding practise/Practise №6/lab6-5.1/input.txt", "r")
 
 line1 = []
 
-line1 = fin.readline().split()
+line1 = f_in.readline().split()  # считываем данные из первой строки файла input в список
 
-a = int(line1[0])
-if len(line1) == 2:
+a = int(line1[0])  # забираем из списка значение переменной а
+if len(line1) == 2:  # если в списке два элемента, то забираем из списка значение переменной b
     b = int(line1[1])
 
-file_name = fin.readline()
+file_name = f"C:/All/Coding practise/Practise №6/lab6-5.1/{f_in.readline()}"
 
-fin.close()
+f_in.close()
 
-if 'b' in globals(): PrintRectangle(a, b, file_name)
-else: PrintSquare(a, file_name)
+if len(line1) == 2:
+    print_rectangle(a, b, file_name)  # если в списке два элемента, то выводим прямоугольник
+else:
+    print_square(a, file_name)  # иначе выводим квадрат
