@@ -1,3 +1,6 @@
+import datetime
+import time
+
 # функция вычисления количества целых точек:
 def count_int_points(r, x, y):                
     count = 0   # завел счётчик
@@ -15,12 +18,9 @@ def count_int_points(r, x, y):
 
     return count
 
-import datetime
-import time
-
 start_time = time.time()        # запоминаю время начала работы программы
 
-f_in = open("C:/All/Coding practise/Practise №6/lab6-5.4/input.txt", "r")
+f_in = open("Practise №6/lab6-5.4/input.txt", "r")
 
 R = int(f_in.readline())     # считываю данные из первой строки в переменную R (радиус)
 line2 = []
@@ -30,7 +30,7 @@ Y = int(line2[1])
 
 f_in.close()
 
-f_out = open("C:/All/Coding practise/Practise №6/lab6-5.4/output.txt", "w")
+f_out = open("Practise №6/lab6-5.4/output.txt", "w")
 
 now = datetime.datetime.now()       # беру текущие дату и время и вывожу их
 f_out.write(datetime.datetime.strftime(now, "%d.%m.%Y %H:%M \n"))

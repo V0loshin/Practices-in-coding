@@ -10,7 +10,7 @@ def randomize_matrix(m, n):  # функция создания произвол�
     return a
 
 
-f_in = open("C:/All/Coding practise/Practise №6/lab6-5.5/input.txt", "r")
+f_in = open("Practise №6/lab6-5.5/input.txt", "r")
 
 line = []
 line = f_in.readline().split()  # считываем данные из первой строки файла input в список
@@ -25,7 +25,7 @@ biggest_number = A.max()  # находим в ней наибольший эле
 K = random.randint(5, 15)  # генерируем число К из диапозона от 5 до 15
 B = randomize_matrix(M, K)  # создаем матрицу В
 
-f_out = open("C:/All/Coding practise/Practise №6/lab6-5.5/output.txt", "w")
+f_out = open("Practise №6/lab6-5.5/output.txt", "w")
 
 f_out.write("Матрица А:\n")  # выводим в файл output матрицу А
 for i in range(N):
