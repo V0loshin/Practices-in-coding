@@ -18,4 +18,3 @@ def stars(string):
         return(stars(new_string) + "*" + string[-1])
 
 print(stars("LFsGthf"))
-
