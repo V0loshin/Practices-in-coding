@@ -29,6 +29,7 @@ time_B_Sorted_opp_way = time.time() - start_time
 
 print(Check(B_sort_random))  # Проверяем отсортировалась ли последовательность
 
+
 # Второй способ (сортировка выбором):
 start_time = time.time()
 S_sort_random = selection_sort(List)
@@ -46,6 +47,7 @@ time_S_Sorted_opp_way = time.time() - start_time
 
 print(Check(S_Sorted))
 
+
 # Третий способ (Быстрая сортировка):
 start_time = time.time()
 Q_sort_random = quick_sort(List, 0, len(List)-1)
@@ -62,6 +64,7 @@ Q_Sorted_opp_way = quick_sort(Q_sort_opposite_way, 0, len(List)-1)
 time_Q_Sorted_opp_way = time.time() - start_time
 
 print(Check(Q_sort_random))
+
 
 # Формируем таблицу с результатами:
 
