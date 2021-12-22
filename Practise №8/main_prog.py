@@ -36,6 +36,7 @@ for i in range(N):
 
 print(Check(List))  # проверяю отсортирована ли последовательность до работы с ней
 
+
 working_process = sorting(List)  # сортирую СЛУЧАЙНУЮ ПОСЛЕДОВАТЕЛЬНОСТЬ с помощью функции и записываю все результаты
 
 print(Check(working_process[3]))  # проверяю правильность результата сортировки для каждого метода
@@ -47,6 +48,7 @@ time_B_sort_random = working_process[0]
 time_S_sort_random = working_process[1]
 time_Q_sort_random = working_process[2]
 
+
 working_process = sorting(working_process[3])  # сортирую УЖЕ ОСТОРТИРОВАННУЮ ПОСЛЕДОВАТЕЛЬНОСТЬ с помощью фукнции
 
 print(Check(working_process[3]))  # проверяю правильность результата сортировки для каждого метода
@@ -57,6 +59,7 @@ print(Check(working_process[5]))
 time_B_sorted = working_process[0]
 time_S_sorted = working_process[1]
 time_Q_sorted = working_process[2]
+
 
 working_process = sorting(working_process[3][::-1])  # сортирую последовательность ОТСОРТИРОВАННУЮ В ОБР. ПОРЯДКЕ
 
