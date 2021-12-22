@@ -47,7 +47,6 @@ def quick_sort(A):  # Быстрая сортировка
                 B[i], B[j] = B[j], B[i]
             i += 1
             j -= 1
-    
     if L < j:
         quick_sort(B[L:j+1])
     if i < R:
